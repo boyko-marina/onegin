@@ -1,0 +1,314 @@
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0041DC4A в функции str_len(). Попытка прочесть данные по адресу 0x41204554 в модуле C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400], Instance: 0x004F61DC (32-bit), Flags: Cmdre0, Thread: 0x3FD8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0041DC4A in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: str_len()
+# 1 0x0041DD6E in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: compare_strings()
+# 2 0x0041DB30 in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: main()
+
+TXLib печалится: Нет информации об исходных файлах. Вы не забыли опцию -g при компиляции?
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\boyko\onedrive\рабочий стол\физтех\летка\code_blocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 19 2025 16:27:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 19 2025 16:28:13
+
+Run file:	C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe
+Directory:	C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0041DC4A в функции str_len(). Попытка прочесть данные по адресу 0x41204554 в модуле C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400], Instance: 0x004F61DC (32-bit), Flags: Cmdre0, Thread: 0x3FD8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0041DC4A in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: str_len()
+# 1 0x0041DD6E in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: compare_strings()
+# 2 0x0041DB30 in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: main()
+
+TXLib печалится: Нет информации об исходных файлах. Вы не забыли опцию -g при компиляции?
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\boyko\onedrive\рабочий стол\физтех\летка\code_blocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 19 2025 16:27:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 19 2025 16:28:13
+
+Run file:	C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe
+Directory:	C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0041DC4A в функции str_len(). Попытка прочесть данные по адресу 0x41204554 в модуле C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400], Instance: 0x004F61DC (32-bit), Flags: Cmdre0, Thread: 0x2DB4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0041DC4A in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: str_len()
+# 1 0x0041DD6E in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: compare_strings()
+# 2 0x0041DB30 in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: main()
+
+TXLib печалится: Нет информации об исходных файлах. Вы не забыли опцию -g при компиляции?
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\boyko\onedrive\рабочий стол\физтех\летка\code_blocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 19 2025 16:27:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 19 2025 16:29:00
+
+Run file:	C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe
+Directory:	C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0041DC4A в функции str_len(). Попытка прочесть данные по адресу 0x41204554 в модуле C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400], Instance: 0x004F61DC (32-bit), Flags: Cmdre0, Thread: 0x2DB4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0041DC4A in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: str_len()
+# 1 0x0041DD6E in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: compare_strings()
+# 2 0x0041DB30 in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: main()
+
+TXLib печалится: Нет информации об исходных файлах. Вы не забыли опцию -g при компиляции?
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\boyko\onedrive\рабочий стол\физтех\летка\code_blocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 19 2025 16:27:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 19 2025 16:29:00
+
+Run file:	C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe
+Directory:	C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0041DC4A в функции str_len(). Попытка прочесть данные по адресу 0x41204554 в модуле C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400], Instance: 0x004F61DC (32-bit), Flags: Cmdre0, Thread: 0x1790 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0041DC4A in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: str_len()
+# 1 0x0041DD6E in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: compare_strings()
+# 2 0x0041DB30 in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: main()
+
+TXLib печалится: Нет информации об исходных файлах. Вы не забыли опцию -g при компиляции?
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\boyko\onedrive\рабочий стол\физтех\летка\code_blocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 19 2025 16:31:14, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 19 2025 16:31:26
+
+Run file:	C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe
+Directory:	C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0041DC4A в функции str_len(). Попытка прочесть данные по адресу 0x41204554 в модуле C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400], Instance: 0x004F61DC (32-bit), Flags: Cmdre0, Thread: 0x1790 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0041DC4A in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: str_len()
+# 1 0x0041DD6E in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: compare_strings()
+# 2 0x0041DB30 in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: main()
+
+TXLib печалится: Нет информации об исходных файлах. Вы не забыли опцию -g при компиляции?
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\boyko\onedrive\рабочий стол\физтех\летка\code_blocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 19 2025 16:31:14, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 19 2025 16:31:26
+
+Run file:	C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe
+Directory:	C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0041DC66 в функции str_len(). Попытка прочесть данные по адресу 0x012CF000 в модуле C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400], Instance: 0x004F61DC (32-bit), Flags: Cmdre0, Thread: 0x2414 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0041DC66 in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: str_len()
+# 1 0x0041DDB1 in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: compare_strings()
+# 2 0x0041DEA7 in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: sort_strings()
+# 3 0x0041DB4C in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: main()
+
+TXLib печалится: Нет информации об исходных файлах. Вы не забыли опцию -g при компиляции?
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\boyko\onedrive\рабочий стол\физтех\летка\code_blocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 19 2025 17:16:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 19 2025 17:16:09
+
+Run file:	C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe
+Directory:	C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0041DC66 в функции str_len(). Попытка прочесть данные по адресу 0x012CF000 в модуле C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400], Instance: 0x004F61DC (32-bit), Flags: Cmdre0, Thread: 0x2414 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0041DC66 in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: str_len()
+# 1 0x0041DDB1 in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: compare_strings()
+# 2 0x0041DEA7 in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: sort_strings()
+# 3 0x0041DB4C in C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe: main()
+
+TXLib печалится: Нет информации об исходных файлах. Вы не забыли опцию -g при компиляции?
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\boyko\onedrive\рабочий стол\физтех\летка\code_blocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 19 2025 17:16:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 19 2025 17:16:09
+
+Run file:	C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin\onegin_2.exe
+Directory:	C:\Users\boyko\OneDrive\Рабочий стол\Физтех\Летка\onegin
+
+--------------------------------------------------

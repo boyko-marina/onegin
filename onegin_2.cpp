@@ -1,3 +1,4 @@
+#include <TXLib.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <strings.h>
@@ -29,19 +30,20 @@ int main( )
 
     int k = num_of_lines(text, n);
     char **ptr_text = point_array(text, n, k);
+//    printf("values n=%d, k=%d\n", n, k);
 
     print_text(ptr_text, k);
     putchar('\n');
 
-    printf("1\n");
+//    printf("sorting strings\n");
 
     sort_strings(ptr_text, k);
 
-    printf("1\n");
+//    printf("printing text\n");
 
     print_text(ptr_text, k);
 
-    printf("1\n");
+//    printf("end of program\n");
 
     free (ptr_text);
     free (text);
@@ -70,13 +72,17 @@ int compare_letters(char par1, char par2)
     {
         return 1;
     }
+    else if (par1 < par2)
+    {
+        return -1;
+    }
     return 0;
 }
 
 size_t str_len(const char *s)
 {
     int i = 0;
-    while (s[i] != '\0')
+    while (s[i] != '\n')
         {
             i++;
         }
@@ -100,14 +106,18 @@ char *make_letters(char *par1)
             k++;
         }
     }
-    char s1[k];
+    char* s1 = (char*) calloc(k+1, sizeof(char));
     int q = 0;
     for (int j = 0; j < len; j++)
     {
-        s1[q] = toupper(par1[j]);
-        q++;
+        if (isalpha(par1[j]))
+        {
+            s1[q] = toupper(par1[j]);
+            q++;
+        }
     }
-    return (char *) s1;
+    s1[k] = '\n';
+    return s1;
 }
 
 int compare_strings(char *par1, char *par2)
@@ -115,25 +125,37 @@ int compare_strings(char *par1, char *par2)
     char *s1 = make_letters(par1);
     char *s2 = make_letters(par2);
 
+    // printf("letters1: ");
+    // print_string(s1);
+    // printf("letters2: ");
+    // print_string(s2);
+
     int len1 = (int) str_len(s1);
     int len2 = (int) str_len(s2);
     int len = min(len1, len2);
 
+    // printf("len1: %d\n", len1);
+    // printf("len2: %d\n", len2);
+
     int i = 0;
     int k = 0;
-    do
+    for (; i < len; i++, k++)
     {
-        k++;
-        i++;
-    } while (compare_letters(s1[i], s2[i]) && i < len);
-    if (k == len - 1)
-    {
-        return 1;
+        int cmp_result = compare_letters(s1[i], s2[i]);
+        if (cmp_result == 1)
+        {
+            return 1;
+        }
+        else if(cmp_result == -1)
+        {
+            return -1;
+        }
     }
-    else
-    {
-        return 0;
-    }
+
+    // printf("returning 0");
+    free(s1);
+    free(s2);
+    return 0;
 }
 
 void sort_strings(char **ptr_text, int k)
@@ -142,11 +164,23 @@ void sort_strings(char **ptr_text, int k)
     {
         for (int i = 0; i < k - j; i++)
         {
-            if (compare_strings(ptr_text[i], ptr_text[i+1]))
+            if (compare_strings(ptr_text[i], ptr_text[i+1]) == 1)
             {
+                // printf("before str1: \n");
+                // print_string(ptr_text[i]);
+                // printf("before str2: \n");
+                // print_string(ptr_text[i+1]);
+
                 char *temp = ptr_text[i];
                 ptr_text[i] = ptr_text[i + 1];
                 ptr_text[i + 1] = temp;
+
+                // printf("after str1: \n");
+                // print_string(ptr_text[i]);
+                // printf("after str2: \n");
+                // print_string(ptr_text[i+1]);
+
+                // printf("\n");
             }
         }
     }
