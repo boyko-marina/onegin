@@ -6,6 +6,10 @@ int size_of_file(FILE *fp);
 int num_of_lines(char *text, int n);
 char *get_array(FILE *fp, int n);
 char **point_array(char *text, int n, int k);
+void sort_first_letters(char **ptr_text, int k);
+int compare_letters(char *par1, char *par2);
+void print_string(char *str);
+void print_text(char **ptr_text, int k);
 
 int main( )
 {
@@ -18,22 +22,60 @@ int main( )
     int n = size_of_file(fp);
     char *text = get_array(fp, n);
 
-    for (int i = 0; i < n; i++)
-    {
-        putchar(text[i]);
-    }
-
     int k = num_of_lines(text, n);
     char **ptr_text = point_array(text, n, k);
 
-/*    for (int q = 0; q < k; q++)
-    {
-        putchar(*ptr_text[q]);
-//        printf("%p\n", ptr_text[q]);
-    }
-*/
+    print_text(ptr_text, k);
+    putchar('\n');
+
+    sort_first_letters(ptr_text, k);
+
+    print_text(ptr_text, k);
+
     free (ptr_text);
     free (text);
+}
+
+void print_string(char *str)
+{
+    for (int i = 0; str[i] != '\n' && str[i] != '\0'; i++)
+    {
+        putchar(str[i]);
+    }
+    putchar('\n');
+}
+
+void print_text(char **ptr_text, int k)
+{
+    for (int i = 0; i < k; i++)
+    {
+        print_string(ptr_text[i]);
+    }
+}
+
+int compare_letters(char *par1, char *par2)
+{
+    if (par1[0] > par2[0])
+    {
+        return 1;
+    }
+    return 0;
+}
+
+void sort_first_letters(char **ptr_text, int k)
+{
+    for (int j = 1; j < k; j++)
+    {
+        for (int i = 0; i < k - j; i++)
+        {
+            if (compare_letters(ptr_text[i], ptr_text[i+1]))
+            {
+                char *temp = ptr_text[i];
+                ptr_text[i] = ptr_text[i + 1];
+                ptr_text[i + 1] = temp;
+            }
+        }
+    }
 }
 
 char **point_array(char *text, int n, int k)
