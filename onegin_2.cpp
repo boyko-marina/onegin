@@ -1,13 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <strings.h>
+#include <ctype.h>
 
 int size_of_file(FILE *fp);
 int num_of_lines(char *text, int n);
 char *get_array(FILE *fp, int n);
 char **point_array(char *text, int n, int k);
-void sort_first_letters(char **ptr_text, int k);
-int compare_letters(char *par1, char *par2);
+void sort_strings(char **ptr_text, int k);
+int compare_letters(char par1, char par2);
+size_t str_len(const char *s);
+int min(int a, int b);
+char *make_letters(char *par1);
+int compare_strings(char *par1, char *par2);
 void print_string(char *str);
 void print_text(char **ptr_text, int k);
 
@@ -28,9 +33,15 @@ int main( )
     print_text(ptr_text, k);
     putchar('\n');
 
-    sort_first_letters(ptr_text, k);
+    printf("1\n");
+
+    sort_strings(ptr_text, k);
+
+    printf("1\n");
 
     print_text(ptr_text, k);
+
+    printf("1\n");
 
     free (ptr_text);
     free (text);
@@ -53,22 +64,85 @@ void print_text(char **ptr_text, int k)
     }
 }
 
-int compare_letters(char *par1, char *par2)
+int compare_letters(char par1, char par2)
 {
-    if (par1[0] > par2[0])
+    if (par1 > par2)
     {
         return 1;
     }
     return 0;
 }
 
-void sort_first_letters(char **ptr_text, int k)
+size_t str_len(const char *s)
+{
+    int i = 0;
+    while (s[i] != '\0')
+        {
+            i++;
+        }
+    return i;
+}
+
+int min(int a, int b)
+{
+    if (a > b) return b;
+    else return a;
+}
+
+char *make_letters(char *par1)
+{
+    int len = (int) str_len(par1);
+    int k = 0;
+    for (int i = 0; i < len; i++)
+    {
+        if (isalpha(par1[i]))
+        {
+            k++;
+        }
+    }
+    char s1[k];
+    int q = 0;
+    for (int j = 0; j < len; j++)
+    {
+        s1[q] = toupper(par1[j]);
+        q++;
+    }
+    return (char *) s1;
+}
+
+int compare_strings(char *par1, char *par2)
+{
+    char *s1 = make_letters(par1);
+    char *s2 = make_letters(par2);
+
+    int len1 = (int) str_len(s1);
+    int len2 = (int) str_len(s2);
+    int len = min(len1, len2);
+
+    int i = 0;
+    int k = 0;
+    do
+    {
+        k++;
+        i++;
+    } while (compare_letters(s1[i], s2[i]) && i < len);
+    if (k == len - 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+void sort_strings(char **ptr_text, int k)
 {
     for (int j = 1; j < k; j++)
     {
         for (int i = 0; i < k - j; i++)
         {
-            if (compare_letters(ptr_text[i], ptr_text[i+1]))
+            if (compare_strings(ptr_text[i], ptr_text[i+1]))
             {
                 char *temp = ptr_text[i];
                 ptr_text[i] = ptr_text[i + 1];
