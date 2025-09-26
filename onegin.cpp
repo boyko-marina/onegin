@@ -11,11 +11,10 @@ int size_of_file(FILE *fp);
 int num_of_lines(char *text, int n);
 char *get_array(FILE *fp, int n);
 char **point_array(char *text, int n, int k);
-void sort_strings(char **ptr_text, int k);
+void sort_strings(char **ptr_text, int k, int (*compare_func) (const char *, const char *));
 int str_len(const char *s);
 int compare_strings_from_start(const char *par1, const char *par2);
 int compare_strings_from_end(const char *par1, const char *par2);
-void sort_strings_reverse(char **ptr_text, int k);
 void print_string(char *str);
 void print_text(char **ptr_text, int k);
 
@@ -38,15 +37,13 @@ int main( )
     print_text(ptr_text, k);
     putchar('\n');
 
-
     printf(COLOR_CYAN "Sorted text by start.\n" COLOR_RESET);
-    sort_strings(ptr_text, k);
+    sort_strings(ptr_text, k, compare_strings_from_start);
     print_text(ptr_text, k);
     putchar('\n');
 
-
     printf(COLOR_CYAN "Sorted text by end.\n" COLOR_RESET);
-    sort_strings_reverse(ptr_text, k);
+    sort_strings(ptr_text, k, compare_strings_from_end);
     print_text(ptr_text, k);
     putchar('\n');
 
@@ -124,17 +121,17 @@ int compare_strings_from_start(const char *par1, const char *par2)
             return -1;
         }
     }
+
     return 0;
 }
 
-
-void sort_strings(char **ptr_text, int k)
+void sort_strings(char **ptr_text, int k, int (*compare_func) (const char *, const char *))
 {
     for (int j = 1; j < k; j++)
     {
         for (int i = 0; i < k - j; i++)
         {
-            if (compare_strings_from_start(ptr_text[i], ptr_text[i+1]) == 1)
+            if (compare_func(ptr_text[i], ptr_text[i+1]) == 1)
             {
                 // printf("before str1: \n");
                 // print_string(ptr_text[i]);
@@ -193,35 +190,8 @@ int compare_strings_from_end(const char *par1, const char *par2)
             return -1;
         }
     }
+
     return 0;
-}
-
-void sort_strings_reverse(char **ptr_text, int k)
-{
-    for (int j = 1; j < k; j++)
-    {
-        for (int i = 0; i < k - j; i++)
-        {
-            if (compare_strings_from_end(ptr_text[i], ptr_text[i + 1]) == 1)
-            {
-                // printf("before str1: \n");
-                // print_string(ptr_text[i]);
-                // printf("before str2: \n");
-                // print_string(ptr_text[i+1]);
-
-                char *temp = ptr_text[i];
-                ptr_text[i] = ptr_text[i + 1];
-                ptr_text[i + 1] = temp;
-
-//                 printf("after str1: \n");
-//                 print_string(ptr_text[i]);
-//                 printf("after str2: \n");
-//                 print_string(ptr_text[i+1]);
-//
-//                 printf("\n");
-            }
-        }
-    }
 }
 
 char **point_array(char *text, int n, int k)
@@ -266,8 +236,7 @@ char *get_array(FILE *fp, int n)
     }
 
     size_t size_of_arr = fread(text, sizeof(char), n, fp);
-    printf("%d\n", n);
-    printf("%d\n", (int) size_of_arr);
+
     if (size_of_arr != (size_t) n)
     {
         printf("Error, the size of array isn't equal to the size of file.\n");
@@ -287,6 +256,7 @@ int num_of_lines(char *text, int n)
             k++;
         }
     }
+
     return k;
 }
 
